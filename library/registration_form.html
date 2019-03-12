@@ -1,0 +1,105 @@
+<html>
+<head>
+<title>registration form</title>
+<style type="text/css">
+body{
+      background-color:#e8f3f8;
+}
+h1{
+   text-align:center;
+   font-size:50px;
+   color:steelblue;
+}
+form{
+     margin:20px auto;
+     width:320px;
+     color:steel blue;
+}
+input{
+      padding:10px;
+      font-size:inherit;
+}
+input[type="text"]{
+                  display:block;
+                  margin-bottom:25px;
+                  width:100%;
+                  border:2px solid steelblue;
+}
+input[type="email"]{
+                  display:block;
+                  margin-bottom:25px;
+                  width:100%;
+                  border:2px solid steelblue;
+}
+input[type="password"]{
+                  display:block;
+                  margin-bottom:25px;
+                  width:100%;
+                  border:2px solid steelblue;
+}
+.location{
+                  display:block;
+                  margin-bottom:25px;
+                  width:55%;
+                  border:2px solid steelblue;
+}
+input[type="text"]{
+                  display:block;
+                  margin-bottom:25px;
+                  width:100%;
+                  border:2px solid steelblue;
+}
+input[type="date"]{
+                  display:block;
+                  margin-bottom:25px;
+                  width:100%;
+                  border:2px solid steelblue;
+}
+</style>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<body>
+  <div class="container">
+    <div class="well well-lg">
+      <h1>Registration Form</h1>
+      <form>
+           <input type="text" class="form-control" placeholder="First Name">
+           <input type="text" class="form-control" placeholder="Last Name">
+           <input type="email" class="form-control" placeholder="Email">
+
+          <p class="location">
+             <select name="location" class="form-control">
+                <option value="apple"><b>choose your country code</b></option>
+                <option value="banana">india=+91</option>
+                <option value="mango">zimbabwe=+96</option>
+                <option value="pineapple">usa=+98</option>
+                <option value="carrot">china=+92</option>
+                <option value="chocolate">japan=+97</option>
+                <option value="dosa">indonesia=+99</option>
+           </select>
+          </p>
+           <input type="text" class="form-control" placeholder="contactnumber">
+           <input type="date"  class="form-control" name="dob">
+           <input type="password" class="form-control" placeholder="Password">
+           <input type="password" class="form-control" placeholder="confirm password">
+
+           <div>
+               Male<input type="radio" id="male" name="gender" value="male" class="form-control" checked>
+               Female<input type="radio" id="female" name="gender" value="female" class="form-control" >
+           </div>
+        <button type="button"
+         class="btn btn-block btn-primary"
+          name="button"
+          onclick="registreme()">
+        Register
+      </button>
+</form>
+</div>
+</div>
+<script>
+function registreme(){
+  alert("You Have Been Registered");
+  window.location.href = 'index.html'; 
+}
+</script>
+</body>
+</html>
