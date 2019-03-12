@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Library Management System</title>
+    <link rel="stylesheet" href="public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="public/css/index.css">
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+      #header_img{
+        height:50px;
+        padding-bottom:9px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+            <img src="public/images/lpu.png" id="header_img" alt="">
+          </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="http://www.lpu.in/">LPU Home<span class="sr-only">(current)</span></a></li>
+            <li><a href="https://ums.lpu.in/lpuums/">Ums Login</a></li>
+            <li><a href="admin.html">Admin Section</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="signin.html">Sign In</a></li>
+            <li><a href="registration_form.html">Register</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+    <div class="container"><!--Container Starts here -->
+      <div class="row">
+      <div class="jumbotron">
+  <h1>Quote Of The Day!</h1>
+  <p>
+    <marquee>If you have a garden and a library, you have everything you need.!! Books are best companions for humans..!!</marquee>
+  </p>
+  <p>
+    <a class="btn btn-primary btn-lg" href="explore_library.html" role="button">
+      Explore Library
+    </a>
+  </p>
+</div>
+</div>
+<div class="row">
+  <div class="col-xs-2"></div>
+  <div class="col-xs-3">
+  <h2>&nbsp&nbspFeedback</h2>
+  <!-- Trigger the modal with a button -->
+  <button
+  type="button"
+  class="btn btn-info btn-lg"
+  data-toggle="modal"
+  data-target="#myModal">
+  Feedback Us
+  </button>
+</div>
+<div class="col-xs-3">
+  <h2>&nbspAbout Us</h2>
+  <!-- Trigger the modal with a button -->
+  <button
+  type="button"
+  class="btn btn-info btn-lg"
+  data-toggle="modal"
+  data-target="#aboutus">
+  About Us
+  </button>
+</div>
+<div class="col-xs-3">
+  <h2>&nbspContribute</h2>
+  <!-- Trigger the modal with a button -->
+  <button
+  type="button"
+  class="btn btn-info btn-lg"
+  data-toggle="modal"
+  data-target="#contribute">
+  Contribute
+  </button>
+</div>
+</div>
+  </div><!-- Container Ends Here-->
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">
+            Feedback Column
+          </h4>
+        </div>
+        <div class="modal-body">
+          <form>
+            <label for="name">Enter Your Name</label>
+            <input type="text" class="form-control" name="name">
+            <label for="email">Enter Email</label>
+            <input type="email" name="email" class="form-control" value="">
+            <label for="reg_no">Enter Registeration Number</label>
+            <input type="text" name="reg_no" class="form-control" value="">
+            <label for="">Enter Feedback</label>
+            <textarea name="name" rows="8" cols="77"></textarea>
+            <br>
+            <button type="button" class="btn btn-block btn-success">
+              Send Feedback
+            </button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="aboutus" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">
+            About Us
+          </h4>
+        </div>
+        <div class="modal-body">
+          Lovely Professional University is a semi-residential
+          university college in North India created under the
+          Punjab State Private University Act 2005 and recognized by UGC
+          under Section 2(f) of UGC Act 1956.
+           LPU offers around 200 programmes and courses at diploma, undergraduate,
+           graduate, postgraduate, and doctoral levels. The university has more than
+           30,000 students graduating every year
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="contribute" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">
+            Contribute
+          </h4>
+        </div>
+        <div class="modal-body">
+          Send Your Resume at lpu@gmail.com <br>
+          <small>
+              Or Fill The Form
+          </small>
+          <form>
+            <legend>Resume Form</legend>
+            <label for="name">Name</label><br>
+            <input type="text" class="form-control" name="name" value=""><br>
+            <label for="cgpa">CGPA</label>
+            <input type="text" class="form-control" name="cgpa" value=""><br>
+            <button type="button" class="btn btn-warning" name="button">
+              Send Resume
+            </button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Scripts starts here-->
+  <script>
+  </script>
+  <!--Scripts end here-->
+  </body>
+</html>
